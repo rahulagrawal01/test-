@@ -81,20 +81,20 @@ html_temp = """
    </div>
    """
 st.markdown(html_temp,unsafe_allow_html=True)
-st.header("Restaurant Review System ")
+st.header("Text Review System ")
   
   
-text = st.text_area("Writre Review of Restaurant")
+text = st.text_area("Writre your text here-")
 
-if st.button("Review Analysis"):
+if st.button("Text Analysis"):
   result=review(text)
   st.success('Model has predicted {}'.format(result))
       
 if st.button("About"):
-  st.subheader("Developed by Deepak Moud")
-  st.subheader("Head , Department of Computer Engineering")
+  st.subheader("BY- RAHUL KUMAR AGRAWAL")
+  st.subheader("STUDENT SECTOIN-C1 , Department of Computer Engineering")
 html_temp = """
-   <div class="" style="background-color:orange;" >
+   <div class="" style="background-color:black;" >
    <div class="clearfix">           
    <div class="col-md-12">
    <center><p style="font-size:20px;color:white;margin-top:10px;">Machine learning Experiment No. 10</p></center> 
